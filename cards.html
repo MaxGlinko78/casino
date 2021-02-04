@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <ul class="header-nav">
+            <li class="links"><a href="index.html" class="link">Главная</a></li>
+            <li class="links"><a href="transform.html" class="link">Трансформацыя</a></li>
+            <li class="links"><a href="tabs.html" class="link">Табы</a></li>
+            <li class="links"><a href="rating.html" class="link">Рейтинг</a></li>
+            <li class="links"><a href="cards.html" class="link">Карточки</a></li>
+            <li class="links"><a href="gallery3d.html" class="link">3D Галерея</a></li>
+            <li class="links"><a href="accordeon.html" class="link">Аккордеон</a></li>
+        </ul>
+    </header>
+
+    <div class="cards-wrapper">
+        <div class="cards-items">
+            <div class="card-inner"></div>
+
+            <a class="js-modal-open link" href="#modal-1"><span>Open Modal - 1</span></a> /
+            <a class="js-modal-open link" href="#modal-2">Open Modal
+                - 2</a>
+
+        </div>
+        <div class="cards-items">
+
+            <div class="items__box"></div>
+
+        </div>
+        <div class="cards-items"></div>
+    </div>
+
+
+    <div class="modal  modal--m" id="modal-1">
+        <div class="modal__dialog">
+            <div class="modal__dialog-header">
+                <div class="modal__dialog-header-content">
+                    Modal Window - №1
+                </div>
+                <div class="modal__dialog-header-close">
+                    <button class="js-modal-close  modal__dialog-header-close-btn"><span>&times;</span></button>
+                </div>
+
+            </div>
+            <div class="modal__dialog-body">
+                <div class="">modal__dialog-body</div>
+                <button id="js-add-content-temp">Add Content</button>
+            </div>
+            <div class="modal__dialog-footer">
+                <button class="js-modal-close btn-close">Close</button>
+            </div>
+        </div>
+        <!-- /.modal_dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal" id="modal-2">
+        <div class="modal__dialog">
+            <div class="modal__dialog-header">
+                <div class="modal__dialog-header-content">
+                    Modal Window - №2
+                </div>
+                <div class="modal__dialog-header-close">
+                    <button class="js-modal-close modal__dialog-header-close-btn"><span>&times;</span></button>
+                </div>
+
+            </div>
+            <div class="modal__dialog-body">
+                <div class="">modal__dialog-body</div>
+                <button id="js-add-content-temp">Add Content</button>
+            </div>
+            <div class="modal__dialog-footer">
+                <button class="js-modal-close btn-close">Close</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.modal -->
+
+
+
+
+    <script src="js/modal.js"></script>
+
+</body>
+
+</html>
