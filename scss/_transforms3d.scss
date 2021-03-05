@@ -111,20 +111,40 @@ ul.btn-3d__nav {
 
 .container {
     position: relative;
-    width: 360px;
-    height: 640px;
-    background: rgba(0, 0, 0, 0.5);
+
+
 }
 
 .fly-box {
-    width: 360px;
-    height: 640px;
-    background: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 210px;
+    height: 140px;
     border: 2px solid brown;
-    transform: rotate(-30deg) skew(25deg) scale(0.8);
+
+    transform: rotate(-30deg) skewX(25deg) translate(0, 0);
 }
 
-.container .fly-box {
-    position: absolute;
-    height: 100%;
+.fly-box:nth-child(1) {
+    top: 20px;
+    background: tomato;
+    z-index: 3;
+
+
+}
+
+.fly-box:nth-child(2) {
+    top: 40px;
+    background: lime;
+    z-index: 2;
+
+}
+
+.fly-box:nth-child(3) {
+    top: 60px;
+    background: orange;
+    z-index: 1;
+
 }
