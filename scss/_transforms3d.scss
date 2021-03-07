@@ -228,3 +228,123 @@ ul.fly-social__box li.fly-social__item:nth-child(4) a.fly-social__link:hover .fa
 ul.fly-social__box li.fly-social__item:nth-child(5) a.fly-social__link:hover .fa {
     color: #bc2a8d;
 }
+
+
+
+.social-3d {}
+
+.social-3d__box {
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: rotate(-25deg) skew(25deg);
+}
+
+.social-3d__item {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+.social-3d__link span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 30px;
+
+    transition: .5s ease-in-out;
+}
+
+.social-3d__item:hover span {
+    z-index: 1000;
+    transition: .5s ease-in-out;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5)
+}
+
+
+
+.social-3d__item:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+.social-3d__item:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+.social-3d__item:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+.social-3d__item:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+.social-3d__item:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
+    opacity: 0.2;
+}
+
+.social-3d__item:nth-child(1):hover span {
+    background: #3b5998;
+}
+
+.social-3d__item:nth-child(2):hover span {
+    background: #bc2a8d;
+}
+
+.social-3d__item:nth-child(3):hover span {
+    background: #007bb6;
+}
+
+.social-3d__item:nth-child(4):hover span {
+    background: #dd4b39;
+}
+
+.social-3d__item:nth-child(5):hover span {
+    background: #00aced;
+}
+
+.social-3d__item:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform-origin: top;
+    transform: skewX(-41deg);
+}
+
+.social-3d__item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 10px;
+    height: 101%;
+    background: #2a2a2a;
+    transform-origin: right;
+    transform: skewY(-41deg);
+}
+
+
+
+
+.fa {}
+
+.fa-facebook {}
