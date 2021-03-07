@@ -29,7 +29,7 @@ ul.btn-3d__nav {
     box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
 
 
-    .fas {
+    .fa {
         font-size: 40px;
         color: #333;
         line-height: 80px;
@@ -147,4 +147,84 @@ ul.btn-3d__nav {
     background: orange;
     z-index: 1;
 
+}
+
+
+/*Social icons*/
+
+.fly-social {
+    position: relative;
+    background: #dedede;
+    height: 80px;
+}
+
+.fly-social__box {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.fly-social__item {
+    list-style: none;
+}
+
+.fly-social__link {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .2s;
+}
+
+
+ul.fly-social__box li.fly-social__item a.fly-social__link:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+ul.fly-social__box li.fly-social__item a.fly-social__link .fa {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .2s;
+
+}
+
+
+ul.fly-social__box li.fly-social__item:nth-child(1) a.fly-social__link:hover .fa {
+    color: #3b5998;
+}
+
+ul.fly-social__box li.fly-social__item:nth-child(2) a.fly-social__link:hover .fa {
+    color: #00aced;
+}
+
+ul.fly-social__box li.fly-social__item:nth-child(3) a.fly-social__link:hover .fa {
+    color: #dd4b39;
+}
+
+ul.fly-social__box li.fly-social__item:nth-child(4) a.fly-social__link:hover .fa {
+    color: #007bb6;
+}
+
+ul.fly-social__box li.fly-social__item:nth-child(5) a.fly-social__link:hover .fa {
+    color: #bc2a8d;
 }
