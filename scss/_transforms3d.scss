@@ -223,6 +223,7 @@ ul.fly-social__box li.fly-social__item:nth-child(3) a.fly-social__link:hover .fa
 
 ul.fly-social__box li.fly-social__item:nth-child(4) a.fly-social__link:hover .fa {
     color: #007bb6;
+
 }
 
 ul.fly-social__box li.fly-social__item:nth-child(5) a.fly-social__link:hover .fa {
@@ -342,9 +343,101 @@ ul.fly-social__box li.fly-social__item:nth-child(5) a.fly-social__link:hover .fa
     transform: skewY(-41deg);
 }
 
+.image-hover {
+    padding: 120px 0 120px 0px;
+    height: auto;
+}
+
+
+.container-fluid {}
+
+.container-main {}
+
+.row {}
+
+.col-sm-4 {}
+
+.image-hover__box {
+    position: relative;
+    width: 85%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
 
 
 
-.fa {}
+    .image-hover__content {
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: .3s ease-in-out;
+        opacity: 0;
 
-.fa-facebook {}
+        h3 {
+            font-size: 48px;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 7px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .btnD {
+            border: none;
+            background: #3b5998;
+            color: #fff;
+            padding: 10px 20px;
+
+            &:hover {
+                background: #fff;
+                color: #3b5998;
+
+            }
+        }
+    }
+}
+
+.image-hover__box:hover {
+    transform: translateY(-30px);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.image-hover__box:hover .image-hover__content {
+    opacity: 1;
+    bottom: 0;
+}
+
+.image_box {
+    position: relative;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        opacity: 0.4;
+        transform: translateY(-40px);
+    }
+
+    img {
+        width: 400px;
+        height: auto;
+        transition: .3s ease-in-out;
+    }
+}
+
+.img-responcive {}
+
+
+
+.btn {}
+
+.btn-light {}
+
+.btnD {}
