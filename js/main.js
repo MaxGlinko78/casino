@@ -100,3 +100,8 @@ let swiper = new Swiper(".swiper-container", {
     disableOnInteraction: false,
   },
 });
+
+VanillaTilt.init(document.querySelectorAll(".box"), {
+  max: 25,
+  speed: 400,
+});

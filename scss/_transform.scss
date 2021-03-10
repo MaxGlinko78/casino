@@ -1,141 +1,47 @@
-.box-wrapp {
-  background-color: grey;
-  perspective: 1000px;
-}
-
-.block {
+.shane {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 16px;
-  color: white;
-  margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  background-color: purple;
-  transition: all .8s ease 0s;
-  //transform-origin: bottom left;
-  //perspective-origin: center;
-  // perspective: 440px;
-
-
-
-  &:hover {
-
-    //transform: translate3D(20px, 20px, -50px);
-    //@debug: scale3d(2, 2, 2);
-    transform: rotate3d(2, 1, 1, 180deg);
-    // perspective: 440px;
-    // transform: rotateX(45deg);
-    //transform: translate(150px, 50px); - передвигает по осям 
-    //transform: scale(5, 1);  - растягивает по осям 1 = "W" или "H" 
-    //transform: rotate(45deg);
-    //transform: skew(45deg); -  смешение обьекта
-
-  }
-
-}
-
-
-
-.hovers {
-  display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0 auto;
-  margin-top: 100px;
-  height: 100px;
-  background-color: black;
+  //flex-direction: column;
+  min-height: 100vh;
+  background: #000;
 }
 
-.hover-social__box {
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
-
-  border: 2px solid lime;
-}
-
-.social__box--wrap {
+.shane-link {
+  display: block;
   position: relative;
-  cursor: pointer;
-  margin-top: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  //border: 2px solid yellow;
+  padding: 15px 30px;
+  margin: 10px;
+  background: #27022d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 1px solid #000;
+  transition: 0.5s;
+  overflow: hidden;
+
+  &:hover {
+    background: #a41ee9;
+  }
+
+
+  &:nth-child(2):hover {
+    background: #ff3c7f;
+  }
+
 }
 
-.social__box--wrap::before {
+.shane-link:before {
   content: '';
-  width: 25px;
-  height: 3px;
-  background-color: red;
   position: absolute;
-  left: 20%;
   top: 0;
-  transition: .5s ease-in-out;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transition: 0.5s;
 }
 
-.social__box--wrap:hover::before {
-  top: 40px;
-
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-  fill: white;
-  transition: .5s ease-in-out;
-
-  &:hover {
-    fill: red;
-  }
-}
-
-
-.search {
-  display: flex;
-  align-items: center;
-  width: 1400px;
-  height: 100px;
-  margin: 0 auto;
-  background-color: orange;
-}
-
-.socials {
-
-  width: 40px;
-  height: 40px;
-  background-color: red;
-  margin-left: 40px;
-}
-
-.input-search {
-  margin: 20px;
-  padding: 0;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  background-image: url(./../img/svg/search.svg);
-  background-repeat: no-repeat;
-  background-position: center, center;
-  transition: .5s ease-in-out;
-
-  &:hover {
-    width: 188px;
-    height: 40px;
-    background-image: url(./../img/svg/search.svg);
-    background-repeat: no-repeat;
-    background-position: 95% center;
-    padding-right: 10px;
-    border-radius: 5px;
-    margin-right: 40px;
-  }
+.shane-link:hover:before {
+  left: 100%;
 }
